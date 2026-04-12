@@ -24,9 +24,8 @@ function App() {
       }
 
       const productData = await response.json();
-      setProducts(productData);
 
-      console.log(productData); // GET RID OF THIS AFTER TESTING!!!!!!!!
+      setProducts(productData);
     } catch (error) {
       setError(error.message);
     } finally {
@@ -44,9 +43,8 @@ function App() {
       }
 
       const cartData = await response.json();
-      setCart(cartData);
 
-      console.log(cartData); // GET RID OF THIS AFTER TESTING!!!!!!!!
+      setCart(cartData);
     } catch (error) {
       console.error(`Error loading cart: ${error.message}`);
     }
@@ -67,8 +65,6 @@ function App() {
     return <p>Error loading products.</p>;
   }
 
-  console.log(products[0]); // GET RID OF THIS AFTER TESTING!!!!!!!!
-
   return (
     <>
       <Navbar cart={cart} />
@@ -78,7 +74,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/shop" element={<Shop products={products} />} />
         <Route path="/products/:id" element={<ProductDetails />} />
-        <Route path="/cart" element={<Cart />} />
+        <Route path="/cart" element={<Cart cart={cart} />} />
         <Route path="/checkout" element={<Checkout />} />
       </Routes>
 
