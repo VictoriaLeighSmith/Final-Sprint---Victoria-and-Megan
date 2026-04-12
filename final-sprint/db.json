@@ -1,0 +1,165 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "The Base Stick",
+      "category": "Complexion",
+      "price": 37,
+      "description": "Sheer, skin-like foundation stick that glides on effortlessly. Creates a smooth even base with a barely there feel.",
+      "image": "https://placehold.co/400x400"
+    },
+    {
+      "id": 2,
+      "name": "The Blush Balm",
+      "category": "Complexion",
+      "price": 26,
+      "description": "A lightweight blush balm that blends seamlessly into the skin - creating a soft, natural wash of colour.",
+      "image": "https://placehold.co/400x400"
+    },
+    {
+      "id": 3,
+      "name": "The Shimmer Stick",
+      "category": "Complexion",
+      "price": 29,
+      "description": "A cream highlight stick that adds a subtle dewy glow, while keeping the skin looking natural.",
+      "image": "https://placehold.co/400x400"
+    },
+    {
+      "id": 4,
+      "name": "The Bronze Balm",
+      "category": "Complexion",
+      "price": 29,
+      "description": "A blendable bronzer that adds warmth and dimension, adding a natural sun kissed finish.",
+      "image": "https://placehold.co/400x400"
+    },
+    {
+      "id": 5,
+      "name": "The Skin Set",
+      "category": "Complexion",
+      "price": 79,
+      "description": "A trio of your bare skin essentials.",
+      "image": "https://placehold.co/400x400"
+    },
+    {
+      "id": 6,
+      "name": "The Satin Liner",
+      "category": "Lips",
+      "price": 21,
+      "description": "Adds definition to the natural shape of the lips.",
+      "image": "https://placehold.co/400x400"
+    },
+    {
+      "id": 7,
+      "name": "The Satin Stick",
+      "category": "Lips",
+      "price": 24,
+      "description": "A buildable, long lasting lip colour.",
+      "image": "https://placehold.co/400x400"
+    },
+    {
+      "id": 8,
+      "name": "The Glow Oil",
+      "category": "Lips",
+      "price": 22,
+      "description": "Hydrates the lips while adding a sheer splash of colour.",
+      "image": "https://placehold.co/400x400"
+    },
+    {
+      "id": 9,
+      "name": "The Lip Mask",
+      "category": "Lips",
+      "price": 20,
+      "description": "A rich, conditioning lip treatment, that melts in and does the work overnight.",
+      "image": "https://placehold.co/400x400"
+    },
+    {
+      "id": 10,
+      "name": "The Lip Set",
+      "category": "Lips",
+      "price": 38,
+      "description": "A duo of your go-to lip essentials.",
+      "image": "https://placehold.co/400x400"
+    },
+    {
+      "id": 11,
+      "name": "The Shadow Stick",
+      "category": "Eyes",
+      "price": 25,
+      "description": "Creamy eyeshadow stick that glides on and blends effortlessly.",
+      "image": "https://placehold.co/400x400"
+    },
+    {
+      "id": 12,
+      "name": "The Lash Lift",
+      "category": "Eyes",
+      "price": 26,
+      "description": "Your lashes - but better.",
+      "image": "https://placehold.co/400x400"
+    },
+    {
+      "id": 13,
+      "name": "The Brow Hold",
+      "category": "Eyes",
+      "price": 24,
+      "description": "A lightweight brow gel for fluffy volume all day long.",
+      "image": "https://placehold.co/400x400"
+    },
+    {
+      "id": 14,
+      "name": "The Brow Enhance",
+      "category": "Eyes",
+      "price": 23,
+      "description": "Brow stick for soft fill, enhancing the brows natural shape.",
+      "image": "https://placehold.co/400x400"
+    },
+    {
+      "id": 15,
+      "name": "The Brow Set",
+      "category": "Eyes",
+      "price": 41,
+      "description": "A brow duo for soft fill and natural hold.",
+      "image": "https://placehold.co/400x400"
+    },
+    {
+      "id": 16,
+      "name": "The Base Brush",
+      "category": "Brushes",
+      "price": 40,
+      "description": "A dense, ultra-soft brush used to blend complexion products evenly into the skin.",
+      "image": "https://placehold.co/400x400"
+    },
+    {
+      "id": 17,
+      "name": "The Sculpt Brush",
+      "category": "Brushes",
+      "price": 36,
+      "description": "A tapered brush, designed for soft contour and natural definition.",
+      "image": "https://placehold.co/400x400"
+    },
+    {
+      "id": 18,
+      "name": "The Blend Brush",
+      "category": "Brushes",
+      "price": 32,
+      "description": "A blending brush for soft colours and diffused edges.",
+      "image": "https://placehold.co/400x400"
+    },
+    {
+      "id": 19,
+      "name": "The Blush Brush",
+      "category": "Brushes",
+      "price": 36,
+      "description": "A soft, fluffy brush designed to apply and blend blush with a light even touch.",
+      "image": "https://placehold.co/400x400"
+    },
+    {
+      "id": 20,
+      "name": "The Brush Set",
+      "category": "Brushes",
+      "price": 118,
+      "description": "A set of staple brushes.",
+      "image": "https://placehold.co/400x400"
+    }
+  ],
+  "cart": []
+}
