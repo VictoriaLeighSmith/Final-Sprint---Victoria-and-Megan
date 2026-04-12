@@ -1,13 +1,4 @@
-import { Link } from "react-router-dom";
-import { HiOutlineShoppingBag } from "react-icons/hi2";
-import { Badge } from "@mui/material";
-import "./Navbar.css";
-
-const Navbar = ({ cart }) => {
-  const cartCount = cart.reduce((total, item) => {
-    return total + item.quantity;
-  }, 0);
-
+const Navbar = ({ cartCount }) => {
   return (
     <nav className="navbar">
       <div className="navbar-container">
