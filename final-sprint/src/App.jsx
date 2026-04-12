@@ -27,9 +27,8 @@ function App() {
       }
 
       const productData = await response.json();
-      setProducts(productData);
 
-      console.log(productData); // GET RID OF THIS AFTER TESTING!!!!!!!!
+      setProducts(productData);
     } catch (error) {
       setError(error.message);
     } finally {
@@ -47,9 +46,8 @@ function App() {
       }
 
       const cartData = await response.json();
-      setCart(cartData);
 
-      console.log(cartData); // GET RID OF THIS AFTER TESTING!!!!!!!!
+      setCart(cartData);
     } catch (error) {
       console.error(`Error loading cart: ${error.message}`);
     }
@@ -69,8 +67,6 @@ function App() {
   if (error) {
     return <p>Error loading products.</p>;
   }
-
-  console.log(products[0]); // GET RID OF THIS AFTER TESTING!!!!!!!!
 
   // Function to add item to cart / update quantity of existing item
   const addToCart = async (product) => {

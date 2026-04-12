@@ -1,0 +1,16 @@
+.product-container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  max-width: 400px;
+}
+
+.product-info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+  padding: 8px;
+}
