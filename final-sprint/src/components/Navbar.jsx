@@ -1,7 +1,9 @@
 const Navbar = ({ cart }) => {
   return (
     <div>
-      <nav></nav>
+      <nav>
+        <p>COOL NAV</p>
+      </nav>
     </div>
   );
 };
