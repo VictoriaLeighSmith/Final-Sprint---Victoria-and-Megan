@@ -1,4 +1,4 @@
-const CartPage = () => {
+const CartPage = ({ removeFromCart, increaseQty, decreaseQty, cart }) => {
   return <div></div>;
 };
 

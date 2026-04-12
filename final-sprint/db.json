@@ -1,7 +1,7 @@
 {
   "products": [
     {
-      "id": 1,
+      "id": "1",
       "name": "The Base Stick",
       "category": "Complexion",
       "price": 37,
@@ -9,7 +9,7 @@
       "image": "https://placehold.co/400x400"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "The Blush Balm",
       "category": "Complexion",
       "price": 26,
@@ -17,7 +17,7 @@
       "image": "https://placehold.co/400x400"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "The Shimmer Stick",
       "category": "Complexion",
       "price": 29,
@@ -25,7 +25,7 @@
       "image": "https://placehold.co/400x400"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "The Bronze Balm",
       "category": "Complexion",
       "price": 29,
@@ -33,7 +33,7 @@
       "image": "https://placehold.co/400x400"
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "The Skin Set",
       "category": "Complexion",
       "price": 79,
@@ -41,7 +41,7 @@
       "image": "https://placehold.co/400x400"
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "The Satin Liner",
       "category": "Lips",
       "price": 21,
@@ -49,7 +49,7 @@
       "image": "https://placehold.co/400x400"
     },
     {
-      "id": 7,
+      "id": "7",
       "name": "The Satin Stick",
       "category": "Lips",
       "price": 24,
@@ -57,7 +57,7 @@
       "image": "https://placehold.co/400x400"
     },
     {
-      "id": 8,
+      "id": "8",
       "name": "The Glow Oil",
       "category": "Lips",
       "price": 22,
@@ -65,7 +65,7 @@
       "image": "https://placehold.co/400x400"
     },
     {
-      "id": 9,
+      "id": "9",
       "name": "The Lip Mask",
       "category": "Lips",
       "price": 20,
@@ -73,7 +73,7 @@
       "image": "https://placehold.co/400x400"
     },
     {
-      "id": 10,
+      "id": "10",
       "name": "The Lip Set",
       "category": "Lips",
       "price": 38,
@@ -81,7 +81,7 @@
       "image": "https://placehold.co/400x400"
     },
     {
-      "id": 11,
+      "id": "11",
       "name": "The Shadow Stick",
       "category": "Eyes",
       "price": 25,
@@ -89,7 +89,7 @@
       "image": "https://placehold.co/400x400"
     },
     {
-      "id": 12,
+      "id": "12",
       "name": "The Lash Lift",
       "category": "Eyes",
       "price": 26,
@@ -97,7 +97,7 @@
       "image": "https://placehold.co/400x400"
     },
     {
-      "id": 13,
+      "id": "13",
       "name": "The Brow Hold",
       "category": "Eyes",
       "price": 24,
@@ -105,7 +105,7 @@
       "image": "https://placehold.co/400x400"
     },
     {
-      "id": 14,
+      "id": "14",
       "name": "The Brow Enhance",
       "category": "Eyes",
       "price": 23,
@@ -113,7 +113,7 @@
       "image": "https://placehold.co/400x400"
     },
     {
-      "id": 15,
+      "id": "15",
       "name": "The Brow Set",
       "category": "Eyes",
       "price": 41,
@@ -121,7 +121,7 @@
       "image": "https://placehold.co/400x400"
     },
     {
-      "id": 16,
+      "id": "16",
       "name": "The Base Brush",
       "category": "Brushes",
       "price": 40,
@@ -129,7 +129,7 @@
       "image": "https://placehold.co/400x400"
     },
     {
-      "id": 17,
+      "id": "17",
       "name": "The Sculpt Brush",
       "category": "Brushes",
       "price": 36,
@@ -137,7 +137,7 @@
       "image": "https://placehold.co/400x400"
     },
     {
-      "id": 18,
+      "id": "18",
       "name": "The Blend Brush",
       "category": "Brushes",
       "price": 32,
@@ -145,7 +145,7 @@
       "image": "https://placehold.co/400x400"
     },
     {
-      "id": 19,
+      "id": "19",
       "name": "The Blush Brush",
       "category": "Brushes",
       "price": 36,
@@ -153,7 +153,7 @@
       "image": "https://placehold.co/400x400"
     },
     {
-      "id": 20,
+      "id": "20",
       "name": "The Brush Set",
       "category": "Brushes",
       "price": 118,

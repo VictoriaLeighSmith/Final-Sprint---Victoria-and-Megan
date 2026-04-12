@@ -1,4 +1,4 @@
-const Navbar = ({ cart }) => {
+const Navbar = ({ cartCount }) => {
   return (
     <div>
       <nav></nav>

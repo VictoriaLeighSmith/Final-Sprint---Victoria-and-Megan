@@ -13,6 +13,9 @@ function App() {
   const [cart, setCart] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const cartCount = cart.reduce((total, item) => {
+    return total + item.quantity;
+  }, 0);
 
   // Create function to fetch product list from the server
   const fetchProducts = async () => {
@@ -69,16 +72,89 @@ function App() {
 
   console.log(products[0]); // GET RID OF THIS AFTER TESTING!!!!!!!!
 
+  // Function to add item to cart / update quantity of existing item
+  const addToCart = async (product) => {
+    const existingItem = cart.find((item) => item.id === product.id);
+
+    // If item already exists in cart, update quantity through patch
+    if (existingItem) {
+      await fetch(`http://localhost:3000/cart/${product.id}`, {
+        method: "PATCH",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ quantity: existingItem.quantity + 1 }),
+      });
+      // Otherwise add the product to cart with quantity set to 1
+    } else {
+      await fetch("http://localhost:3000/cart", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ ...product, quantity: 1 }),
+      });
+    }
+    fetchCart();
+  };
+
+  // Function to remove an item from cart by product id
+  const removeFromCart = async (product) => {
+    await fetch(`http://localhost:3000/cart/${product.id}`, {
+      method: "DELETE",
+    });
+    fetchCart();
+  };
+
+  // Function to increase quantity using + button on cart page
+  const increaseQty = async (product) => {
+    await fetch(`http://localhost:3000/cart/${product.id}`, {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ quantity: product.quantity + 1 }),
+    });
+    fetchCart();
+  };
+
+  // Function to decrease quantity using - button on cart page
+  const decreaseQty = async (product) => {
+    if (product.quantity > 1) {
+      await fetch(`http://localhost:3000/cart/${product.id}`, {
+        method: "PATCH",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ quantity: product.quantity - 1 }),
+      });
+      fetchCart();
+    }
+  };
+
   return (
     <>
-      <Navbar cart={cart} />
+      <Navbar cartCount={cartCount} />
 
       {/* Set up routes for all website pages */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/shop" element={<Shop products={products} />} />
-        <Route path="/products/:id" element={<ProductDetails />} />
-        <Route path="/cart" element={<Cart />} />
+        <Route
+          path="/products/:id"
+          element={<ProductDetails addToCart={addToCart} products={products} />}
+        />
+        <Route
+          path="/cart"
+          element={
+            <Cart
+              cart={cart}
+              removeFromCart={removeFromCart}
+              increaseQty={increaseQty}
+              decreaseQty={decreaseQty}
+            />
+          }
+        />
         <Route path="/checkout" element={<Checkout />} />
       </Routes>
 
