@@ -94,7 +94,7 @@ function App() {
     fetchCart();
   };
 
-  // Function to remove an item from cart by product id
+  // Function to remove an item from cart
   const removeFromCart = async (product) => {
     await fetch(`http://localhost:3000/cart/${product.id}`, {
       method: "DELETE",
