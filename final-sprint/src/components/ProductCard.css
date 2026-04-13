@@ -19,3 +19,26 @@
   gap: 16px;
   padding: 8px;
 }
+
+/* ---------- STYLES FOR COMPACT CARDS ---------- */
+.compact-card {
+  width: 160px;
+}
+
+.compact-card .product-image-container img {
+  height: 160px;
+  object-fit: cover;
+}
+
+.compact-card .product-info-container {
+  gap: 8px;
+  padding: 8px;
+}
+
+.compact-card .product-info-container h3 {
+  font-size: 1rem;
+}
+
+.compact-card .product-info-container p {
+  font-size: 0.9rem;
+}
