@@ -1,0 +1,41 @@
+.home-page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: clamp(280px, 40vw, 500px);
+  overflow: hidden;
+  border: 1px solid black;
+}
+
+.hero-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.home-page-section-1,
+.home-page-section-2 {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 24px 0;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+.section-1-info-container,
+.section-2-info-container {
+  border: 1px solid black;
+  flex: 0 0 750px;
+  min-height: 400px;
+}
