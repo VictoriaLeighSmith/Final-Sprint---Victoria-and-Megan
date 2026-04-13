@@ -5,6 +5,11 @@
   max-width: 400px;
 }
 
+.product-card-link {
+  text-decoration: none;
+  color: black;
+}
+
 .product-info-container {
   display: flex;
   flex-direction: column;
