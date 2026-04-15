@@ -10,7 +10,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  height: clamp(280px, 40vw, 500px);
+  height: clamp(280px, 40vw, 600px);
   overflow: hidden;
   border: 1px solid black;
 }
@@ -31,11 +31,33 @@
   margin: 24px 0;
   padding: 20px;
   border: 1px solid black;
+  width: min(1200px, 100%);
 }
 
 .section-1-info-container,
 .section-2-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 70px;
   border: 1px solid black;
-  flex: 0 0 750px;
-  min-height: 400px;
+  flex: 1 1 700px;
+  min-height: 500px;
+  padding: 30px;
+}
+
+/* ---------- STYLES FOR COMPACT CARDS ---------- */
+.home-product-preview-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 36px;
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .home-product-preview-row {
+    flex-direction: column;
+    align-items: center;
+  }
 }
