@@ -69,34 +69,45 @@ function App() {
   }
 
   // Function to add item to cart / update quantity of existing item
+
   const addToCart = async (product) => {
     const existingItem = cart.find(
-      (item) => Number(item.id) === Number(product.id),
+      (item) => String(item.productId) === String(product.id),
     );
 
-    // If item already exists in cart, update quantity through patch
     if (existingItem) {
-      await fetch(`http://localhost:3000/cart/${product.id}`, {
+      await fetch(`http://localhost:3000/cart/${existingItem.id}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ quantity: existingItem.quantity + 1 }),
+        body: JSON.stringify({
+          quantity: existingItem.quantity + 1,
+        }),
       });
-      // Otherwise add the product to cart with quantity set to 1
     } else {
+      const cartItem = {
+        productId: String(product.id),
+        name: product.name,
+        category: product.category,
+        price: product.price,
+        description: product.description,
+        image: product.image,
+        quantity: 1,
+      };
+
       await fetch("http://localhost:3000/cart", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ ...product, quantity: 1 }),
+        body: JSON.stringify(cartItem),
       });
     }
+
     fetchCart();
   };
 
-  // Function to remove an item from cart
   const removeFromCart = async (product) => {
     await fetch(`http://localhost:3000/cart/${product.id}`, {
       method: "DELETE",
@@ -104,19 +115,19 @@ function App() {
     fetchCart();
   };
 
-  // Function to increase quantity using + button on cart page
   const increaseQty = async (product) => {
     await fetch(`http://localhost:3000/cart/${product.id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ quantity: product.quantity + 1 }),
+      body: JSON.stringify({
+        quantity: product.quantity + 1,
+      }),
     });
     fetchCart();
   };
 
-  // Function to decrease quantity using - button on cart page
   const decreaseQty = async (product) => {
     if (product.quantity > 1) {
       await fetch(`http://localhost:3000/cart/${product.id}`, {
@@ -124,12 +135,13 @@ function App() {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ quantity: product.quantity - 1 }),
+        body: JSON.stringify({
+          quantity: product.quantity - 1,
+        }),
       });
       fetchCart();
     }
   };
-
   return (
     <>
       <Navbar cartCount={cartCount} />

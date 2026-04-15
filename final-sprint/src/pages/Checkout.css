@@ -1,38 +1,109 @@
 .checkout-page {
-  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 20px 80px;
+  font-family: "Sora", sans-serif;
+  font-weight: 500;
 }
 
 .checkout-container {
   display: flex;
-  gap: 20px;
+  gap: 40px;
+  align-items: flex-start;
 }
 
 .checkout-form,
 .order-summary {
-  border: 1px solid black;
-  padding: 15px;
+  background: white;
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
 }
 
 .checkout-form {
-  flex: 2;
+  flex: 1.6;
   display: flex;
   flex-direction: column;
-  gap: 15px;
-}
-
-.checkout-form input,
-.checkout-form button {
-  padding: 8px;
-  border: 1px solid black;
-}
-
-.checkout-form button {
-  cursor: pointer;
-  background: white;
+  gap: 24px;
+  padding: 28px;
 }
 
 .order-summary {
   flex: 1;
+  padding: 36px;
+}
+
+.checkout-form h1,
+.checkout-form h2,
+.checkout-form h3 {
+  margin: 0;
+}
+
+.checkout-form h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+
+.checkout-form h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.checkout-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.row {
+  display: flex;
+  gap: 12px;
+}
+
+.row input {
+  flex: 1;
+}
+
+.checkout-form input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  font-size: 15px;
+  background: white;
+  color: black;
+  font-family: "Barlow", sans-serif;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.checkout-form input:focus {
+  outline: none;
+  border-color: black;
+  box-shadow: 0 0 0 1px black;
+}
+
+.checkout-form button {
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 14px 20px;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 14px;
+}
+
+.checkout-form button:hover {
+  background-color: #222;
+  transform: translateY(-1px);
+}
+
+.checkout-form button:active {
+  transform: scale(0.99);
 }
 
 .success-box {
@@ -40,7 +111,37 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border: 1px solid black;
-  padding: 20px;
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+  padding: 24px;
   background: white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  z-index: 10;
+}
+
+@media (max-width: 900px) {
+  .checkout-page {
+    padding: 80px 16px 60px;
+  }
+
+  .checkout-container {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .checkout-form,
+  .order-summary {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .success-box {
+    width: 90%;
+    padding: 18px;
+  }
 }

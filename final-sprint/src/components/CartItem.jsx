@@ -8,24 +8,39 @@ const CartItem = ({
   variant,
 }) => {
   const isCheckout = variant === "checkout";
+
   return (
     <div className={`cart-item ${isCheckout ? "checkout-item" : ""}`}>
-      <img src="https://placehold.co/400x400" alt="cart item image" />
-      <div className="cart-details">
-        <p>{item.name}</p>
+      <img src={item.image || "https://placehold.co/400x400"} alt={item.name} />
+
+      <div className="cart-item-info">
+        <h3>{item.name}</h3>
         <p>${item.price}.00</p>
-        {isCheckout && <p>Qty: {item.quantity}</p>}
-        {!isCheckout && <p>{item.description}</p>}
+
+        {isCheckout ? (
+          <p className="qty-text">Qty: {item.quantity}</p>
+        ) : (
+          <p className="description">{item.description}</p>
+        )}
       </div>
+
       {!isCheckout && (
-        <div className="cart-controls">
-          <div className="quantity-controls">
-            <button onClick={() => decreaseQty(item)}>-</button>
+        <div className="cart-item-controls">
+          <div className="qty-controls">
+            <button className="qty-btn" onClick={() => decreaseQty(item)}>
+              -
+            </button>
+
             <span>{item.quantity}</span>
-            <button onClick={() => increaseQty(item)}>+</button>
+
+            <button className="qty-btn" onClick={() => increaseQty(item)}>
+              +
+            </button>
           </div>
 
-          <button onClick={() => removeFromCart(item)}>remove</button>
+          <button className="remove-btn" onClick={() => removeFromCart(item)}>
+            remove
+          </button>
         </div>
       )}
     </div>
