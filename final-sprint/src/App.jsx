@@ -70,7 +70,9 @@ function App() {
 
   // Function to add item to cart / update quantity of existing item
   const addToCart = async (product) => {
-    const existingItem = cart.find((item) => item.id === product.id);
+    const existingItem = cart.find(
+      (item) => Number(item.id) === Number(product.id),
+    );
 
     // If item already exists in cart, update quantity through patch
     if (existingItem) {
@@ -134,7 +136,7 @@ function App() {
 
       {/* Set up routes for all website pages */}
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home products={products} />} />
         <Route path="/shop" element={<Shop products={products} />} />
         <Route
           path="/products/:id"
