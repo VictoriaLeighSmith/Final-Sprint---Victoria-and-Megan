@@ -1,7 +1,7 @@
 .product-container {
   display: flex;
   flex-direction: column;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   max-width: 400px;
 }
 
@@ -42,7 +42,7 @@
 
 .product-info-container h3 {
   font-family: "Sora", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .product-info-container p {
@@ -51,11 +51,11 @@
 
 /* ---------- STYLES FOR COMPACT CARDS ---------- */
 .compact-card {
-  width: 160px;
+  width: 180px;
 }
 
 .compact-card .product-image-container img {
-  height: 160px;
+  height: 180px;
   object-fit: cover;
 }
 
@@ -66,6 +66,7 @@
 
 .compact-card .product-info-container h3 {
   font-size: 1rem;
+  padding-top: 8px;
 }
 
 .compact-card .product-info-container p {
