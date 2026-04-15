@@ -1,53 +1,71 @@
 import CartItem from "../components/CartItem";
 import { Link } from "react-router-dom";
+import "./CartPage.css";
 
 const CartPage = ({ cart, increaseQty, decreaseQty, removeFromCart }) => {
-  //Calculations for summary
   const subtotal = cart.reduce((total, item) => {
     return total + item.price * item.quantity;
   }, 0);
+
   const TAX_RATE = 0.15;
   const tax = subtotal * TAX_RATE;
-  const total = tax + subtotal;
+  const total = subtotal + tax;
 
   return (
-    <div className="cart-layout">
-      <div className="cart-items">
-        {cart.length === 0 ? (
-          <p>Your cart is empty.</p>
-        ) : (
-          cart.map((item) => (
-            <CartItem
-              key={item.id}
-              item={item}
-              removeFromCart={removeFromCart}
-              increaseQty={increaseQty}
-              decreaseQty={decreaseQty}
-            />
-          ))
-        )}
-        <Link to="/checkout">
-          <button>Checkout</button>
-        </Link>
-      </div>
+    <div className="cart-page">
+      <div className="cart-container">
+        <section className="cart-items-section">
+          <h1>Your Cart</h1>
 
-      <div className="cart-summary">
-        <h1>Summary</h1>
+          {cart.length === 0 ? (
+            <p className="empty-cart-message">Your cart is empty.</p>
+          ) : (
+            <>
+              <div className="cart-items-list">
+                {cart.map((item) => (
+                  <CartItem
+                    key={item.id}
+                    item={item}
+                    removeFromCart={removeFromCart}
+                    increaseQty={increaseQty}
+                    decreaseQty={decreaseQty}
+                  />
+                ))}
+              </div>
 
-        {cart.map((item) => (
-          <p key={item.id}>
-            {item.name} x {item.quantity} = $
-            {(item.quantity * item.price).toFixed(2)}
-          </p>
-        ))}
+              <Link to="/checkout" className="checkout-link">
+                <button className="cart-checkout-btn">
+                  Proceed to Checkout
+                </button>
+              </Link>
+            </>
+          )}
+        </section>
 
-        <hr />
+        <aside className="cart-summary">
+          <h2>Order Summary</h2>
 
-        <p>Subtotal: ${subtotal.toFixed(2)}</p>
-        <p>Tax: ${tax.toFixed(2)}</p>
-        <p>
-          <strong>Total: ${total.toFixed(2)}</strong>
-        </p>
+          {cart.length === 0 ? (
+            <p>Your subtotal will appear here.</p>
+          ) : (
+            <>
+              {cart.map((item) => (
+                <p key={item.id}>
+                  {item.name} x {item.quantity} = $
+                  {(item.quantity * item.price).toFixed(2)}
+                </p>
+              ))}
+
+              <hr />
+
+              <div className="totals">
+                <p>Subtotal: ${subtotal.toFixed(2)}</p>
+                <p>Tax: ${tax.toFixed(2)}</p>
+                <p className="total">Total: ${total.toFixed(2)}</p>
+              </div>
+            </>
+          )}
+        </aside>
       </div>
     </div>
   );
