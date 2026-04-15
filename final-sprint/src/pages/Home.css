@@ -10,7 +10,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  height: clamp(280px, 40vw, 500px);
+  height: clamp(280px, 40vw, 600px);
   overflow: hidden;
   border: 1px solid black;
 }

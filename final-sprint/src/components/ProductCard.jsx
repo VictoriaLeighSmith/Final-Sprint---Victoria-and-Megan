@@ -13,6 +13,8 @@ const ProductCard = ({ product, compact = false }) => {
           <h3>{product.name}</h3>
           <p>${product.price.toFixed(2)}</p>
 
+          <br />
+
           {!compact && <p>{product.description}</p>}
         </div>
       </Link>

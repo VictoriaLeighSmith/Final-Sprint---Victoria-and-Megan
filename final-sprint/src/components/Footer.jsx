@@ -24,7 +24,7 @@ const Footer = () => {
       </div>
 
       <div className="logo-container">
-        <img src="https://placehold.co/250x100" alt="Logo" />
+        <h3>Common</h3>
       </div>
     </div>
   );

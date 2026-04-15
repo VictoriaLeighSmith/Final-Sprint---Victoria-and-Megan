@@ -13,7 +13,7 @@ const Home = ({ products }) => {
   return (
     <div className="home-page-container">
       <div className="hero-container">
-        <img src="https://placehold.co/1400x450" />
+        <img src="https://placehold.co/1400x600" />
       </div>
 
       <div className="home-page-section-1">

@@ -1,24 +1,68 @@
 .navbar {
-  padding: 15px 24px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  transition:
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.navbar-transparent {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.navbar-solid {
+  background-color: white;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
 }
 
 .navbar-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 64px;
-  border: 1px solid black;
-  padding: 0 10px;
+  height: 80px;
+  /* border: 1px solid black; */
+  padding: 20px 64px;
 }
 
 .nav-link {
+  color: black;
+  font-family: "Barlow", sans-serif;
   text-decoration: none;
   font-size: 1.1rem;
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
 }
 
 .logo-link {
+  color: black;
+  font-family: "Selovira Signature", serif;
   text-decoration: none;
-  font-size: 1.4rem;
+  font-size: 4.2rem;
+  font-weight: 400;
+}
+
+.logo-link-container {
+  padding-bottom: 7px;
 }
 
 .cart-link {
