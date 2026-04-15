@@ -1,6 +1,8 @@
 import CartItem from "../components/CartItem";
+import { Link } from "react-router-dom";
 
 const CartPage = ({ cart, increaseQty, decreaseQty, removeFromCart }) => {
+  //Calculations for summary
   const subtotal = cart.reduce((total, item) => {
     return total + item.price * item.quantity;
   }, 0);
@@ -24,7 +26,9 @@ const CartPage = ({ cart, increaseQty, decreaseQty, removeFromCart }) => {
             />
           ))
         )}
-        <button>Checkout</button>
+        <Link to="/checkout">
+          <button>Checkout</button>
+        </Link>
       </div>
 
       <div className="cart-summary">
@@ -40,7 +44,7 @@ const CartPage = ({ cart, increaseQty, decreaseQty, removeFromCart }) => {
         <hr />
 
         <p>Subtotal: ${subtotal.toFixed(2)}</p>
-        <p>Taxes: ${tax.toFixed(2)}</p>
+        <p>Tax: ${tax.toFixed(2)}</p>
         <p>
           <strong>Total: ${total.toFixed(2)}</strong>
         </p>

@@ -1,0 +1,46 @@
+.checkout-page {
+  padding: 20px;
+}
+
+.checkout-container {
+  display: flex;
+  gap: 20px;
+}
+
+.checkout-form,
+.order-summary {
+  border: 1px solid black;
+  padding: 15px;
+}
+
+.checkout-form {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.checkout-form input,
+.checkout-form button {
+  padding: 8px;
+  border: 1px solid black;
+}
+
+.checkout-form button {
+  cursor: pointer;
+  background: white;
+}
+
+.order-summary {
+  flex: 1;
+}
+
+.success-box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid black;
+  padding: 20px;
+  background: white;
+}
