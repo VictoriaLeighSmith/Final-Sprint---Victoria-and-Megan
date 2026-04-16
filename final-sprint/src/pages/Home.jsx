@@ -1,5 +1,6 @@
 import ProductCard from "../components/ProductCard";
 import "./Home.css";
+import faceImage from "../assets/Home Face.png";
 
 const Home = ({ products }) => {
   const sectionOneProducts = products.filter((product) =>
@@ -13,7 +14,7 @@ const Home = ({ products }) => {
   return (
     <div className="home-page-container">
       <div className="hero-container">
-        <img src="https://placehold.co/1400x600" />
+        <img src={faceImage} alt="Image of a womans face" />
       </div>
 
       <div className="home-page-section-1">
