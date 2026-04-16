@@ -17,7 +17,17 @@ const ProductDetails = ({ products, addToCart }) => {
 
       <div className="details-info-container">
         <h3>{product.name}</h3>
+        <p>${product.price.toFixed(2)}</p>
         <p>{product.description}</p>
+
+        {product.shadesImage && (
+          <img
+            className="shades-image"
+            src={product.shadesImage}
+            alt={product.name}
+          />
+        )}
+
         <button onClick={() => addToCart(product)}>ADD TO CART</button>
       </div>
     </div>

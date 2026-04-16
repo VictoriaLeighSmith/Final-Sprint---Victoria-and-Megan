@@ -2,13 +2,14 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 100px 20px 80px;
-  font-family: "Sora", sans-serif;
 }
 
 .cart-container {
   display: flex;
   gap: 40px;
   align-items: flex-start;
+  min-height: 700px;
+  margin: 90px 20px 60px;
 }
 
 .cart-items-section,
@@ -33,13 +34,16 @@
   gap: 22px;
 }
 
-.cart-items-section h1 {
-  font-size: 2.8rem;
-  margin: 0 0 10px 0;
+.cart-summary p,
+.cart-items-section p {
+  font-family: "Barlow", sans-serif;
 }
 
+.cart-items-section h2,
 .cart-summary h2 {
-  font-size: 2rem;
+  font-family: "Sora", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
   margin: 0;
 }
 
@@ -98,7 +102,7 @@
 }
 
 .total {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .cart-item {
@@ -111,7 +115,6 @@
   width: 120px;
   height: 120px;
   object-fit: cover;
-  border-radius: 6px;
   background: #eee;
 }
 

@@ -6,7 +6,9 @@
       "category": "Complexion",
       "price": 37,
       "description": "Sheer, skin-like foundation stick that glides on effortlessly. Creates a smooth even base with a barely there feel.",
-      "image": "https://placehold.co/400x400"
+      "shortDescription": "Sheer Foundation",
+      "image": "https://placehold.co/400x400",
+      "shadesImage": "/images/foundation-shade-selector.png"
     },
     {
       "id": "2",
@@ -14,6 +16,7 @@
       "category": "Complexion",
       "price": 26,
       "description": "A lightweight blush balm that blends seamlessly into the skin - creating a soft, natural wash of colour.",
+      "shortDescription": "Subtle Blush",
       "image": "https://placehold.co/400x400"
     },
     {
@@ -22,6 +25,7 @@
       "category": "Complexion",
       "price": 29,
       "description": "A cream highlight stick that adds a subtle dewy glow, while keeping the skin looking natural.",
+      "shortDescription": "Glowy Highlighter",
       "image": "https://placehold.co/400x400"
     },
     {
@@ -30,6 +34,7 @@
       "category": "Complexion",
       "price": 29,
       "description": "A blendable bronzer that adds warmth and dimension, adding a natural sun kissed finish.",
+      "shortDescription": "Natural Bronzer",
       "image": "https://placehold.co/400x400"
     },
     {
@@ -38,6 +43,7 @@
       "category": "Complexion",
       "price": 79,
       "description": "A trio of your bare skin essentials.",
+      "shortDescription": "Essential Trio",
       "image": "https://placehold.co/400x400"
     },
     {
@@ -46,6 +52,7 @@
       "category": "Lips",
       "price": 21,
       "description": "Adds definition to the natural shape of the lips.",
+      "shortDescription": "Lip Definer",
       "image": "https://placehold.co/400x400"
     },
     {
@@ -54,6 +61,7 @@
       "category": "Lips",
       "price": 24,
       "description": "A buildable, long lasting lip colour.",
+      "shortDescription": "Satin Lip Colour",
       "image": "https://placehold.co/400x400"
     },
     {
@@ -62,6 +70,7 @@
       "category": "Lips",
       "price": 22,
       "description": "Hydrates the lips while adding a sheer splash of colour.",
+      "shortDescription": "Tinted Lip Oil",
       "image": "https://placehold.co/400x400"
     },
     {
@@ -70,6 +79,7 @@
       "category": "Lips",
       "price": 20,
       "description": "A rich, conditioning lip treatment, that melts in and does the work overnight.",
+      "shortDescription": "Overnight Lip Care",
       "image": "https://placehold.co/400x400"
     },
     {
@@ -78,6 +88,7 @@
       "category": "Lips",
       "price": 38,
       "description": "A duo of your go-to lip essentials.",
+      "shortDescription": "Lip Duo",
       "image": "https://placehold.co/400x400"
     },
     {
@@ -86,6 +97,7 @@
       "category": "Eyes",
       "price": 25,
       "description": "Creamy eyeshadow stick that glides on and blends effortlessly.",
+      "shortDescription": "Cream Eyeshadow",
       "image": "https://placehold.co/400x400"
     },
     {
@@ -94,6 +106,7 @@
       "category": "Eyes",
       "price": 26,
       "description": "Your lashes - but better.",
+      "shortDescription": "Lengthening Mascara",
       "image": "https://placehold.co/400x400"
     },
     {
@@ -102,6 +115,7 @@
       "category": "Eyes",
       "price": 24,
       "description": "A lightweight brow gel for fluffy volume all day long.",
+      "shortDescription": "Brow Gel",
       "image": "https://placehold.co/400x400"
     },
     {
@@ -110,6 +124,7 @@
       "category": "Eyes",
       "price": 23,
       "description": "Brow stick for soft fill, enhancing the brows natural shape.",
+      "shortDescription": "Brow Pencil",
       "image": "https://placehold.co/400x400"
     },
     {
@@ -118,6 +133,7 @@
       "category": "Eyes",
       "price": 41,
       "description": "A brow duo for soft fill and natural hold.",
+      "shortDescription": "Brow Duo",
       "image": "https://placehold.co/400x400"
     },
     {
@@ -126,6 +142,7 @@
       "category": "Brushes",
       "price": 40,
       "description": "A dense, ultra-soft brush used to blend complexion products evenly into the skin.",
+      "shortDescription": "Base Brush",
       "image": "https://placehold.co/400x400"
     },
     {
@@ -134,6 +151,7 @@
       "category": "Brushes",
       "price": 36,
       "description": "A tapered brush, designed for soft contour and natural definition.",
+      "shortDescription": "Contour Brush",
       "image": "https://placehold.co/400x400"
     },
     {
@@ -142,6 +160,7 @@
       "category": "Brushes",
       "price": 32,
       "description": "A blending brush for soft colours and diffused edges.",
+      "shortDescription": "Blending Brush",
       "image": "https://placehold.co/400x400"
     },
     {
@@ -150,6 +169,7 @@
       "category": "Brushes",
       "price": 36,
       "description": "A soft, fluffy brush designed to apply and blend blush with a light even touch.",
+      "shortDescription": "Blush Brush",
       "image": "https://placehold.co/400x400"
     },
     {
@@ -158,8 +178,21 @@
       "category": "Brushes",
       "price": 118,
       "description": "A set of staple brushes.",
+      "shortDescription": "Brush Set",
       "image": "https://placehold.co/400x400"
     }
   ],
-  "cart": []
+  "cart": [
+    {
+      "productId": "1",
+      "name": "The Base Stick",
+      "category": "Complexion",
+      "price": 37,
+      "description": "Sheer, skin-like foundation stick that glides on effortlessly. Creates a smooth even base with a barely there feel.",
+      "image": "https://placehold.co/400x400",
+      "quantity": 1,
+      "id": "edJhjcUVa-c"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }

@@ -24,12 +24,10 @@
   justify-content: space-between;
   align-items: center;
   height: 80px;
-  /* border: 1px solid black; */
   padding: 20px 64px;
 }
 
 .nav-link {
-  color: black;
   font-family: "Barlow", sans-serif;
   text-decoration: none;
   font-size: 1.1rem;
@@ -43,7 +41,6 @@
   bottom: -4px;
   width: 100%;
   height: 1px;
-  background-color: black;
   transform: scaleX(0);
   transform-origin: center;
   transition: transform 0.3s ease;
@@ -54,11 +51,9 @@
 }
 
 .logo-link {
-  color: black;
   font-family: "Selovira Signature", serif;
   text-decoration: none;
-  font-size: 4.2rem;
-  font-weight: 400;
+  font-size: 4.3rem;
 }
 
 .logo-link-container {
@@ -66,6 +61,26 @@
 }
 
 .cart-link {
-  color: black;
   font-size: 24px;
+}
+
+/* ---------- SWAP COLOURS OF NAV LINKS BASED ON NAVBAR STATE ---------- */
+.navbar-transparent .nav-link,
+.navbar-transparent .logo-link,
+.navbar-transparent .cart-link {
+  color: #faf9f6;
+}
+
+.navbar-solid .nav-link,
+.navbar-solid .logo-link,
+.navbar-solid .cart-link {
+  color: black;
+}
+
+.navbar-transparent .nav-link::after {
+  background-color: #faf9f6;
+}
+
+.navbar-solid .nav-link::after {
+  background-color: black;
 }
