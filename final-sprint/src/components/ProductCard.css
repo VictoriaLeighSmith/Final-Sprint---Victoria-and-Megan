@@ -1,7 +1,6 @@
 .product-container {
   display: flex;
   flex-direction: column;
-  /* border: 1px solid black; */
   max-width: 400px;
 }
 
@@ -36,7 +35,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 4px;
+  gap: 8px;
   padding: 16px;
 }
 
@@ -47,6 +46,14 @@
 
 .product-info-container p {
   font-family: "Barlow", sans-serif;
+  font-size: 0.9rem;
+}
+
+.product-info-container .product-short-description {
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  opacity: 0.6;
 }
 
 /* ---------- STYLES FOR COMPACT CARDS ---------- */

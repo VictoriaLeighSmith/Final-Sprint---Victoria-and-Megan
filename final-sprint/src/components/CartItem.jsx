@@ -36,11 +36,11 @@ const CartItem = ({
             <button className="qty-btn" onClick={() => increaseQty(item)}>
               +
             </button>
-          </div>
 
-          <button className="remove-btn" onClick={() => removeFromCart(item)}>
-            remove
-          </button>
+            <button className="remove-btn" onClick={() => removeFromCart(item)}>
+              remove
+            </button>
+          </div>
         </div>
       )}
     </div>

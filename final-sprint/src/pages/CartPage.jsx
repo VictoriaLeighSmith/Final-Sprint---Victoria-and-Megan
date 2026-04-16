@@ -15,7 +15,7 @@ const CartPage = ({ cart, increaseQty, decreaseQty, removeFromCart }) => {
     <div className="cart-page">
       <div className="cart-container">
         <section className="cart-items-section">
-          <h1>Your Cart</h1>
+          <h2>Your Cart</h2>
 
           {cart.length === 0 ? (
             <p className="empty-cart-message">Your cart is empty.</p>
