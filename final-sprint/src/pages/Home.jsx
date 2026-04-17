@@ -1,6 +1,6 @@
 import ProductCard from "../components/ProductCard";
 import "./Home.css";
-import faceImage from "../assets/Home Face.png";
+import faceImage from "../assets/HomeFace.png";
 
 const Home = ({ products }) => {
   const sectionOneProducts = products.filter((product) =>
