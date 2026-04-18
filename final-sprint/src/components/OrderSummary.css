@@ -8,7 +8,9 @@
 
 .order-summary-content h2 {
   margin: 0;
-  font-size: 2rem;
+  font-size: 1.4rem;
+  font-family: "Sora", sans-serif;
+  font-weight: 400;
 }
 
 /* ITEMS LIST */
@@ -31,7 +33,6 @@
   width: 140px;
   height: 140px;
   object-fit: cover;
-  border-radius: 8px;
   background: #eee;
   flex-shrink: 0;
 }
@@ -45,13 +46,16 @@
 
 .cart-item.checkout-item .cart-item-info h3 {
   margin: 0;
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.3;
+
+  font-family: "Sora", sans-serif;
 }
 
 .cart-item.checkout-item .cart-item-info p {
   margin: 0;
   line-height: 1.5;
+  font-family: "Barlow", sans-serif;
 }
 
 .cart-item.checkout-item .cart-item-controls {
@@ -72,6 +76,7 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
+  font-family: "Barlow", sans-serif;
 }
 
 .summary-totals p {

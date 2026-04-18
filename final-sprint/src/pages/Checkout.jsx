@@ -3,27 +3,41 @@ import OrderSummary from "../components/OrderSummary";
 import { useState } from "react";
 
 const Checkout = ({ cart }) => {
-  const [success, setSuccess] = useState(false);
+  const [popupKey, setPopupKey] = useState(0);
+  const [popupMessage, setPopupMessage] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleOrderSuccess = (e) => {
     e.preventDefault();
-    setSuccess(true);
+
+    const form = e.target;
+    const inputs = form.querySelectorAll("input");
+
+    let isValid = true;
+
+    inputs.forEach((input) => {
+      if (!input.value.trim()) {
+        isValid = false;
+      }
+    });
+
+    if (!isValid) {
+      setPopupMessage("Please fill out all fields");
+      setPopupKey(Date.now());
+      return;
+    }
+
+    setPopupMessage("Order placed successfully!");
+    setPopupKey(Date.now());
   };
 
   return (
     <div className="checkout-page">
-      {success && (
-        <div className="success-box">
-          <p>Order placed successfully!</p>
-        </div>
-      )}
-
       <div className="checkout-container">
-        <form className="checkout-form" onSubmit={handleSubmit}>
-          <h1>Checkout</h1>
+        <form className="checkout-form" onSubmit={handleOrderSuccess}>
+          <h2>Checkout</h2>
 
           <section className="checkout-section">
-            <h2>Contact Info</h2>
+            <h3>Contact Info</h3>
             <div className="row">
               <input type="text" placeholder="Full Name" />
               <input type="email" placeholder="Email" />
@@ -31,7 +45,7 @@ const Checkout = ({ cart }) => {
           </section>
 
           <section className="checkout-section">
-            <h2>Shipping Address</h2>
+            <h3>Shipping Address</h3>
             <div className="row">
               <input type="text" placeholder="Address" />
               <input type="text" placeholder="City" />
@@ -43,7 +57,7 @@ const Checkout = ({ cart }) => {
           </section>
 
           <section className="checkout-section">
-            <h2>Payment</h2>
+            <h3>Payment</h3>
             <input type="text" placeholder="Card Number" />
             <div className="row">
               <input type="text" placeholder="MM/YY" />
@@ -58,6 +72,11 @@ const Checkout = ({ cart }) => {
           <OrderSummary cart={cart} />
         </aside>
       </div>
+      {popupKey !== 0 && (
+        <div key={popupKey} className="order-success">
+          <p>{popupMessage}</p>
+        </div>
+      )}
     </div>
   );
 };
