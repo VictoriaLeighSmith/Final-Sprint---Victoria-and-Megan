@@ -8,7 +8,8 @@
       "description": "Sheer, skin-like foundation stick that glides on effortlessly. Creates a smooth even base with a barely there feel.",
       "shortDescription": "Sheer Foundation",
       "shadesImage": "/images/foundation-shade-selector.png",
-      "image": "/Images/Foundation.png"
+      "image": "/Images/foundation-stick.png",
+      "detailsImage": "/Images/details-foundation.png"
     },
     {
       "id": "2",
@@ -17,7 +18,8 @@
       "price": 26,
       "description": "A lightweight blush balm that blends seamlessly into the skin - creating a soft, natural wash of colour.",
       "shortDescription": "Subtle Blush",
-      "image": "/Images/Blush.png"
+      "image": "/Images/blush.png",
+      "detailsImage": "/Images/details-blush.png"
     },
     {
       "id": "3",
@@ -26,7 +28,8 @@
       "price": 29,
       "description": "A cream highlight stick that adds a subtle dewy glow, while keeping the skin looking natural.",
       "shortDescription": "Glowy Highlighter",
-      "image": "/Images/Shimmer-Stick.png"
+      "image": "/Images/shimmer-stick.png",
+      "detailsImage": "/Images/details-shimmer.png"
     },
     {
       "id": "4",
@@ -35,7 +38,8 @@
       "price": 29,
       "description": "A blendable bronzer that adds warmth and dimension, adding a natural sun kissed finish.",
       "shortDescription": "Natural Bronzer",
-      "image": "/Images/Bronzer.png"
+      "image": "/Images/bronzer.png",
+      "detailsImage": "/Images/details-bronzer.png"
     },
     {
       "id": "5",
@@ -44,7 +48,8 @@
       "price": 79,
       "description": "A trio of your bare skin essentials.",
       "shortDescription": "Essential Trio",
-      "image": "/Images/FaceSet.png"
+      "image": "/Images/face-set.png",
+      "detailsImage": "/Images/details-face-set.png"
     },
     {
       "id": "6",
@@ -53,7 +58,8 @@
       "price": 21,
       "description": "Adds definition to the natural shape of the lips.",
       "shortDescription": "Lip Definer",
-      "image": "/Images/LipLiner.png"
+      "image": "/Images/lip-liner.png",
+      "detailsImage": "/Images/details-lip-liner.png"
     },
     {
       "id": "7",
@@ -62,7 +68,8 @@
       "price": 24,
       "description": "A buildable, long lasting lip colour.",
       "shortDescription": "Satin Lip Colour",
-      "image": "/Images/Lipstick.png"
+      "image": "/Images/lipstick.png",
+      "detailsImage": "/Images/details-lipstick.png"
     },
     {
       "id": "8",
@@ -71,7 +78,8 @@
       "price": 22,
       "description": "Hydrates the lips while adding a sheer splash of colour.",
       "shortDescription": "Tinted Lip Oil",
-      "image": "/Images/Lipgloss.png"
+      "image": "/Images/lipgloss.png",
+      "detailsImage": "/Images/details-lip-oil.png"
     },
     {
       "id": "9",
@@ -80,7 +88,8 @@
       "price": 20,
       "description": "A rich, conditioning lip treatment, that melts in and does the work overnight.",
       "shortDescription": "Overnight Lip Care",
-      "image": "/Images/LipMask.png"
+      "image": "/Images/lip-mask.png",
+      "detailsImage": "/Images/details-lip-mask.png"
     },
     {
       "id": "10",
@@ -89,7 +98,8 @@
       "price": 38,
       "description": "A duo of your go-to lip essentials.",
       "shortDescription": "Lip Duo",
-      "image": "/Images/LipSet.png"
+      "image": "/Images/lip-set.png",
+      "detailsImage": "/Images/details-lip-set.png"
     },
     {
       "id": "11",
@@ -98,7 +108,8 @@
       "price": 25,
       "description": "Creamy eyeshadow stick that glides on and blends effortlessly.",
       "shortDescription": "Cream Eyeshadow",
-      "image": "/Images/Shadow.png"
+      "image": "/Images/shadow.png",
+      "detailsImage": "/Images/details-eyeshadow.png"
     },
     {
       "id": "12",
@@ -107,7 +118,8 @@
       "price": 26,
       "description": "Your lashes - but better.",
       "shortDescription": "Lengthening Mascara",
-      "image": "/Images/Mascara.png"
+      "image": "/Images/mascara.png",
+      "detailsImage": "/Images/details-mascara.png"
     },
     {
       "id": "13",
@@ -116,7 +128,8 @@
       "price": 24,
       "description": "A lightweight brow gel for fluffy volume all day long.",
       "shortDescription": "Brow Gel",
-      "image": "/Images/BrowGel.png"
+      "image": "/Images/brow-gel.png",
+      "detailsImage": "/Images/details-brow-gel.png"
     },
     {
       "id": "14",
@@ -125,7 +138,8 @@
       "price": 23,
       "description": "Brow stick for soft fill, enhancing the brows natural shape.",
       "shortDescription": "Brow Pencil",
-      "image": "/Images/BrowStick.png"
+      "image": "/Images/brow-stick.png",
+      "detailsImage": "/Images/details-brow-stick.png"
     },
     {
       "id": "15",
@@ -134,7 +148,8 @@
       "price": 41,
       "description": "A brow duo for soft fill and natural hold.",
       "shortDescription": "Brow Duo",
-      "image": "/Images/BrowSet.png"
+      "image": "/Images/brow-set.png",
+      "detailsImage": "/Images/details-brow-set.png"
     },
     {
       "id": "16",
@@ -143,7 +158,8 @@
       "price": 40,
       "description": "A dense, ultra-soft brush used to blend complexion products evenly into the skin.",
       "shortDescription": "Base Brush",
-      "image": "/Images/FoundationBrush.png"
+      "image": "/Images/foundation-brush.png",
+      "detailsImage": "/Images/details-foundation-brush.png"
     },
     {
       "id": "17",
@@ -152,7 +168,8 @@
       "price": 36,
       "description": "A tapered brush, designed for soft contour and natural definition.",
       "shortDescription": "Contour Brush",
-      "image": "/Images/AngleBrush.png"
+      "image": "/Images/sculpt-brush.png",
+      "detailsImage": "/Images/details-sculpt-brush.png"
     },
     {
       "id": "18",
@@ -161,7 +178,8 @@
       "price": 32,
       "description": "A blending brush for soft colours and diffused edges.",
       "shortDescription": "Blending Brush",
-      "image": "/Images/BlendBrush.png"
+      "image": "/Images/blend-brush.png",
+      "detailsImage": "/Images/details-eyeshadow-brush.png"
     },
     {
       "id": "19",
@@ -170,7 +188,8 @@
       "price": 36,
       "description": "A soft, fluffy brush designed to apply and blend blush with a light even touch.",
       "shortDescription": "Blush Brush",
-      "image": "/Images/BlushBrush.png"
+      "image": "/Images/blush-brush.png",
+      "detailsImage": "/Images/details-blush-brush.png"
     },
     {
       "id": "20",
@@ -179,20 +198,9 @@
       "price": 118,
       "description": "A set of staple brushes.",
       "shortDescription": "Brush Set",
-      "image": "/Images/BrushSet.png"
+      "image": "/Images/brush-set.png",
+      "detailsImage": "/Images/details-brush-set.png"
     }
   ],
-  "cart": [
-    {
-      "productId": "1",
-      "name": "The Base Stick",
-      "category": "Complexion",
-      "price": 37,
-      "description": "Sheer, skin-like foundation stick that glides on effortlessly. Creates a smooth even base with a barely there feel.",
-      "image": "https://placehold.co/400x400",
-      "quantity": 1,
-      "id": "edJhjcUVa-c"
-    }
-  ],
-  "$schema": "./node_modules/json-server/schema.json"
+  "cart": []
 }

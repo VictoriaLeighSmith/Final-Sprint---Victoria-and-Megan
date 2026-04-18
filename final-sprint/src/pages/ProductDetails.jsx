@@ -12,7 +12,7 @@ const ProductDetails = ({ products, addToCart }) => {
   return (
     <div className="product-details-container">
       <div className="details-image-container">
-        <img src="https://placehold.co/600x500" alt={product.name} />
+        <img src={product.detailsImage} alt={product.name} />
       </div>
 
       <div className="details-info-container">
