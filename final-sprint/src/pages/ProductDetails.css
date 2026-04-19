@@ -12,7 +12,7 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 16px;
-
+  width: 100%;
   max-width: 500px;
   padding: 24px;
 }
@@ -30,26 +30,102 @@
   margin: 0;
 }
 
-.shades-image {
+.shade-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.shade {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.set-shades p {
+  font-weight: 400;
+  font-size: 0.9rem;
+  margin: 10px 0;
+}
+
+.purchase-section {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 12px;
+  gap: 20px;
 }
 
 .details-info-container button {
   font-family: "Barlow", sans-serif;
   width: 100%;
-  padding: 14px;
-  letter-spacing: 0.5px;
-  border: none;
   background-color: black;
   color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 14px 20px;
+  font-size: 14px;
+  letter-spacing: 0.5px;
   cursor: pointer;
   transition: all 0.2s ease;
-  margin-top: 10px;
+  margin-top: 14px;
 }
 
 .details-info-container button:hover {
   background-color: #222;
   transform: translateY(-1px);
+}
+
+.product-details-container .add-to-cart-success {
+  position: fixed;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: fit-content;
+  max-width: 90%;
+  padding: 14px 20px;
+
+  background-color: #1f1f1f;
+  color: #f7f4ef;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 14px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+  font-family: "Barlow", sans-serif;
+  font-size: 0.95rem;
+  letter-spacing: 0.2px;
+  white-space: nowrap;
+
+  animation: fadeInOut 2s ease forwards;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -10px);
+  }
+  15% {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+  85% {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -10px);
+  }
 }
 
 @media (max-width: 900px) {

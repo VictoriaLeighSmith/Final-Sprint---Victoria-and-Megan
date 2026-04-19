@@ -7,6 +7,21 @@
       "price": 37,
       "description": "Sheer, skin-like foundation stick that glides on effortlessly. Creates a smooth even base with a barely there feel.",
       "shortDescription": "Sheer Foundation",
+      "image": "/Images/Foundation.png",
+      "shades": [
+        "#3B2A24",
+        "#4A332A",
+        "#5A3B2E",
+        "#6B4633",
+        "#7C5138",
+        "#8E5C3D",
+        "#A06A46",
+        "#B37A55",
+        "#C78D6A",
+        "#D9A47F",
+        "#E8BC97",
+        "#F2D3B2"
+      ]
       "shadesImage": "/images/foundation-shade-selector.png",
       "image": "/Images/foundation-stick.png",
       "detailsImage": "/Images/details-foundation.png"
@@ -18,6 +33,15 @@
       "price": 26,
       "description": "A lightweight blush balm that blends seamlessly into the skin - creating a soft, natural wash of colour.",
       "shortDescription": "Subtle Blush",
+      "image": "/Images/Blush.png",
+      "shades": [
+        "#F3C6C4",
+        "#EFA7A2",
+        "#E58D88",
+        "#D8747A",
+        "#C65F6B",
+        "#B24E5F"
+      ]
       "image": "/Images/blush.png",
       "detailsImage": "/Images/details-blush.png"
     },
@@ -28,6 +52,13 @@
       "price": 29,
       "description": "A cream highlight stick that adds a subtle dewy glow, while keeping the skin looking natural.",
       "shortDescription": "Glowy Highlighter",
+      "image": "/Images/Shimmer-Stick.png",
+      "shades": [
+        "#F6E7C1",
+        "#EFD8A3",
+        "#D8B07A",
+        "#8C5A3C"
+      ]
       "image": "/Images/shimmer-stick.png",
       "detailsImage": "/Images/details-shimmer.png"
     },
@@ -38,6 +69,13 @@
       "price": 29,
       "description": "A blendable bronzer that adds warmth and dimension, adding a natural sun kissed finish.",
       "shortDescription": "Natural Bronzer",
+      "image": "/Images/Bronzer.png",
+      "shades": [
+        "#D2A679",
+        "#B88C5A",
+        "#9C6F45",
+        "#6F4A2E"
+      ]
       "image": "/Images/bronzer.png",
       "detailsImage": "/Images/details-bronzer.png"
     },
@@ -48,6 +86,46 @@
       "price": 79,
       "description": "A trio of your bare skin essentials.",
       "shortDescription": "Essential Trio",
+      "image": "/Images/FaceSet.png",
+      "setProducts": [
+        {
+          "name": "Blush",
+          "shades": [
+            "#F3C6C4",
+            "#EFA7A2",
+            "#E58D88",
+            "#D8747A",
+            "#C65F6B",
+            "#B24E5F"
+          ]
+        },
+        {
+          "name": "Foundation",
+          "shades": [
+            "#3B2A24",
+            "#4A332A",
+            "#5A3B2E",
+            "#6B4633",
+            "#7C5138",
+            "#8E5C3D",
+            "#A06A46",
+            "#B37A55",
+            "#C78D6A",
+            "#D9A47F",
+            "#E8BC97",
+            "#F2D3B2"
+          ]
+        },
+        {
+          "name": "Bronzer",
+          "shades": [
+            "#D2A679",
+            "#B88C5A",
+            "#9C6F45",
+            "#6F4A2E"
+          ]
+        }
+      ]
       "image": "/Images/face-set.png",
       "detailsImage": "/Images/details-face-set.png"
     },
@@ -58,6 +136,21 @@
       "price": 21,
       "description": "Adds definition to the natural shape of the lips.",
       "shortDescription": "Lip Definer",
+      "image": "/Images/LipLiner.png",
+      "shades": [
+        "#F2C7B5",
+        "#EAB8A6",
+        "#DFA595",
+        "#D48F84",
+        "#C97A74",
+        "#B86563",
+        "#A95458",
+        "#94444E",
+        "#7F3A44",
+        "#6A2F38",
+        "#52242D",
+        "#3B1A22"
+      ]
       "image": "/Images/lip-liner.png",
       "detailsImage": "/Images/details-lip-liner.png"
     },
@@ -68,6 +161,21 @@
       "price": 24,
       "description": "A buildable, long lasting lip colour.",
       "shortDescription": "Satin Lip Colour",
+      "image": "/Images/Lipstick.png",
+      "shades": [
+        "#F0BBA8",
+        "#E3A392",
+        "#D48E80",
+        "#C87873",
+        "#B86465",
+        "#A85258",
+        "#94434C",
+        "#803744",
+        "#6C2E3D",
+        "#582636",
+        "#421C2A",
+        "#2C121D"
+      ]
       "image": "/Images/lipstick.png",
       "detailsImage": "/Images/details-lipstick.png"
     },
@@ -78,6 +186,15 @@
       "price": 22,
       "description": "Hydrates the lips while adding a sheer splash of colour.",
       "shortDescription": "Tinted Lip Oil",
+      "image": "/Images/Lipgloss.png",
+      "shades": [
+        "#F7C9B8",
+        "#F3AFA3",
+        "#EA948F",
+        "#DD7F87",
+        "#C86A75",
+        "#A85666"
+      ]
       "image": "/Images/lipgloss.png",
       "detailsImage": "/Images/details-lip-oil.png"
     },
@@ -98,6 +215,37 @@
       "price": 38,
       "description": "A duo of your go-to lip essentials.",
       "shortDescription": "Lip Duo",
+      "image": "/Images/LipSet.png",
+      "setProducts": [
+        {
+          "name": "Lip Liner",
+          "shades": [
+            "#F0BBA8",
+            "#E3A392",
+            "#D48E80",
+            "#C87873",
+            "#B86465",
+            "#A85258",
+            "#94434C",
+            "#803744",
+            "#6C2E3D",
+            "#582636",
+            "#421C2A",
+            "#2C121D"
+          ]
+        },
+        {
+          "name": "Lip Oil",
+          "shades": [
+            "#F7C9B8",
+            "#F3AFA3",
+            "#EA948F",
+            "#DD7F87",
+            "#C86A75",
+            "#A85666"
+          ]
+        }
+      ]
       "image": "/Images/lip-set.png",
       "detailsImage": "/Images/details-lip-set.png"
     },
@@ -108,6 +256,15 @@
       "price": 25,
       "description": "Creamy eyeshadow stick that glides on and blends effortlessly.",
       "shortDescription": "Cream Eyeshadow",
+      "image": "/Images/Shadow.png",
+      "shades": [
+        "#F1E5D8",
+        "#DCC6B2",
+        "#C2A58F",
+        "#A88770",
+        "#8C6A5A",
+        "#6F5145"
+      ]
       "image": "/Images/shadow.png",
       "detailsImage": "/Images/details-eyeshadow.png"
     },
@@ -118,6 +275,11 @@
       "price": 26,
       "description": "Your lashes - but better.",
       "shortDescription": "Lengthening Mascara",
+      "image": "/Images/Mascara.png",
+      "shades": [
+        "#2B1F1A",
+        "#4A342A"
+      ]
       "image": "/Images/mascara.png",
       "detailsImage": "/Images/details-mascara.png"
     },
@@ -138,6 +300,14 @@
       "price": 23,
       "description": "Brow stick for soft fill, enhancing the brows natural shape.",
       "shortDescription": "Brow Pencil",
+      "image": "/Images/BrowStick.png",
+      "shades": [
+        "#E6D3B3",
+        "#BFA487",
+        "#8C6F5A",
+        "#5E4638",
+        "#2F231C"
+      ]
       "image": "/Images/brow-stick.png",
       "detailsImage": "/Images/details-brow-stick.png"
     },
@@ -148,6 +318,14 @@
       "price": 41,
       "description": "A brow duo for soft fill and natural hold.",
       "shortDescription": "Brow Duo",
+      "image": "/Images/BrowSet.png",
+      "shades": [
+        "#E6D3B3",
+        "#BFA487",
+        "#8C6F5A",
+        "#5E4638",
+        "#2F231C"
+      ]
       "image": "/Images/brow-set.png",
       "detailsImage": "/Images/details-brow-set.png"
     },
@@ -202,5 +380,19 @@
       "detailsImage": "/Images/details-brush-set.png"
     }
   ],
+  "cart": [
+    {
+      "productId": "1",
+      "name": "The Base Stick",
+      "category": "Complexion",
+      "price": 37,
+      "description": "Sheer, skin-like foundation stick that glides on effortlessly. Creates a smooth even base with a barely there feel.",
+      "image": "/Images/Foundation.png",
+      "quantity": 4,
+      "id": "fagqi1AWiSk"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
   "cart": []
 }
