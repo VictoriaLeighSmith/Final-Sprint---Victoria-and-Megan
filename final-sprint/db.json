@@ -22,6 +22,9 @@
         "#E8BC97",
         "#F2D3B2"
       ]
+      "shadesImage": "/images/foundation-shade-selector.png",
+      "image": "/Images/foundation-stick.png",
+      "detailsImage": "/Images/details-foundation.png"
     },
     {
       "id": "2",
@@ -39,6 +42,8 @@
         "#C65F6B",
         "#B24E5F"
       ]
+      "image": "/Images/blush.png",
+      "detailsImage": "/Images/details-blush.png"
     },
     {
       "id": "3",
@@ -54,6 +59,8 @@
         "#D8B07A",
         "#8C5A3C"
       ]
+      "image": "/Images/shimmer-stick.png",
+      "detailsImage": "/Images/details-shimmer.png"
     },
     {
       "id": "4",
@@ -69,6 +76,8 @@
         "#9C6F45",
         "#6F4A2E"
       ]
+      "image": "/Images/bronzer.png",
+      "detailsImage": "/Images/details-bronzer.png"
     },
     {
       "id": "5",
@@ -117,6 +126,8 @@
           ]
         }
       ]
+      "image": "/Images/face-set.png",
+      "detailsImage": "/Images/details-face-set.png"
     },
     {
       "id": "6",
@@ -140,6 +151,8 @@
         "#52242D",
         "#3B1A22"
       ]
+      "image": "/Images/lip-liner.png",
+      "detailsImage": "/Images/details-lip-liner.png"
     },
     {
       "id": "7",
@@ -163,6 +176,8 @@
         "#421C2A",
         "#2C121D"
       ]
+      "image": "/Images/lipstick.png",
+      "detailsImage": "/Images/details-lipstick.png"
     },
     {
       "id": "8",
@@ -180,6 +195,8 @@
         "#C86A75",
         "#A85666"
       ]
+      "image": "/Images/lipgloss.png",
+      "detailsImage": "/Images/details-lip-oil.png"
     },
     {
       "id": "9",
@@ -188,7 +205,8 @@
       "price": 20,
       "description": "A rich, conditioning lip treatment, that melts in and does the work overnight.",
       "shortDescription": "Overnight Lip Care",
-      "image": "/Images/LipMask.png"
+      "image": "/Images/lip-mask.png",
+      "detailsImage": "/Images/details-lip-mask.png"
     },
     {
       "id": "10",
@@ -228,6 +246,8 @@
           ]
         }
       ]
+      "image": "/Images/lip-set.png",
+      "detailsImage": "/Images/details-lip-set.png"
     },
     {
       "id": "11",
@@ -245,6 +265,8 @@
         "#8C6A5A",
         "#6F5145"
       ]
+      "image": "/Images/shadow.png",
+      "detailsImage": "/Images/details-eyeshadow.png"
     },
     {
       "id": "12",
@@ -258,6 +280,8 @@
         "#2B1F1A",
         "#4A342A"
       ]
+      "image": "/Images/mascara.png",
+      "detailsImage": "/Images/details-mascara.png"
     },
     {
       "id": "13",
@@ -266,7 +290,8 @@
       "price": 24,
       "description": "A lightweight brow gel for fluffy volume all day long.",
       "shortDescription": "Brow Gel",
-      "image": "/Images/BrowGel.png"
+      "image": "/Images/brow-gel.png",
+      "detailsImage": "/Images/details-brow-gel.png"
     },
     {
       "id": "14",
@@ -283,6 +308,8 @@
         "#5E4638",
         "#2F231C"
       ]
+      "image": "/Images/brow-stick.png",
+      "detailsImage": "/Images/details-brow-stick.png"
     },
     {
       "id": "15",
@@ -299,6 +326,8 @@
         "#5E4638",
         "#2F231C"
       ]
+      "image": "/Images/brow-set.png",
+      "detailsImage": "/Images/details-brow-set.png"
     },
     {
       "id": "16",
@@ -307,7 +336,8 @@
       "price": 40,
       "description": "A dense, ultra-soft brush used to blend complexion products evenly into the skin.",
       "shortDescription": "Base Brush",
-      "image": "/Images/FoundationBrush.png"
+      "image": "/Images/foundation-brush.png",
+      "detailsImage": "/Images/details-foundation-brush.png"
     },
     {
       "id": "17",
@@ -316,7 +346,8 @@
       "price": 36,
       "description": "A tapered brush, designed for soft contour and natural definition.",
       "shortDescription": "Contour Brush",
-      "image": "/Images/AngleBrush.png"
+      "image": "/Images/sculpt-brush.png",
+      "detailsImage": "/Images/details-sculpt-brush.png"
     },
     {
       "id": "18",
@@ -325,7 +356,8 @@
       "price": 32,
       "description": "A blending brush for soft colours and diffused edges.",
       "shortDescription": "Blending Brush",
-      "image": "/Images/BlendBrush.png"
+      "image": "/Images/blend-brush.png",
+      "detailsImage": "/Images/details-eyeshadow-brush.png"
     },
     {
       "id": "19",
@@ -334,7 +366,8 @@
       "price": 36,
       "description": "A soft, fluffy brush designed to apply and blend blush with a light even touch.",
       "shortDescription": "Blush Brush",
-      "image": "/Images/BlushBrush.png"
+      "image": "/Images/blush-brush.png",
+      "detailsImage": "/Images/details-blush-brush.png"
     },
     {
       "id": "20",
@@ -343,7 +376,8 @@
       "price": 118,
       "description": "A set of staple brushes.",
       "shortDescription": "Brush Set",
-      "image": "/Images/BrushSet.png"
+      "image": "/Images/brush-set.png",
+      "detailsImage": "/Images/details-brush-set.png"
     }
   ],
   "cart": [
@@ -359,4 +393,6 @@
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
+}
+  "cart": []
 }

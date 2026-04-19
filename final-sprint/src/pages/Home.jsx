@@ -18,9 +18,7 @@ const Home = ({ products }) => {
       </div>
 
       <div className="home-page-section-1">
-        <div className="section-1-image-container">
-          <img src="https://placehold.co/600x600" />
-        </div>
+        <div className="section-1-image-container"></div>
 
         <div className="section-1-info-container">
           <h3 className="section-1-title">
@@ -33,6 +31,14 @@ const Home = ({ products }) => {
             ))}
           </div>
         </div>
+      </div>
+
+      <div className="sentence-section">
+        <h3>Beauty, Simplified</h3>
+        <p>
+          Minimal formulas designed to enhance what's already yours - nothing
+          more, nothing extra.
+        </p>
       </div>
 
       <div className="home-page-section-2">
@@ -48,9 +54,7 @@ const Home = ({ products }) => {
           </div>
         </div>
 
-        <div className="section-2-image-container">
-          <img src="https://placehold.co/600x600" />
-        </div>
+        <div className="section-2-image-container"></div>
       </div>
     </div>
   );
