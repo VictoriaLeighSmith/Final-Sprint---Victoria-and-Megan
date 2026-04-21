@@ -5,7 +5,6 @@
 }
 
 /* HEADER */
-
 .order-summary-content h2 {
   margin: 0;
   font-size: 1.4rem;
@@ -14,7 +13,6 @@
 }
 
 /* ITEMS LIST */
-
 .summary-items {
   display: flex;
   flex-direction: column;
@@ -22,7 +20,6 @@
 }
 
 /* INDIVIDUAL ITEM */
-
 .cart-item.checkout-item {
   display: flex;
   align-items: flex-start;
@@ -63,7 +60,6 @@
 }
 
 /* DIVIDER */
-
 .order-summary-content hr {
   border: none;
   border-top: 1px solid #d9d9d9;
@@ -71,7 +67,6 @@
 }
 
 /* TOTALS */
-
 .summary-totals {
   display: flex;
   flex-direction: column;

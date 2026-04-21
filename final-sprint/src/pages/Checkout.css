@@ -1,3 +1,4 @@
+/* ---------- Styles for checkout page/container ---------- */
 .checkout-page {
   max-width: 1200px;
   margin: 0 auto;
@@ -11,6 +12,7 @@
   align-items: flex-start;
 }
 
+/* ---------- Styles for checkout form and order summary ---------- */
 .checkout-form,
 .order-summary {
   background: white;
@@ -84,6 +86,7 @@
   box-shadow: 0 0 0 1px black;
 }
 
+/* ---------- Styles for checkout button ---------- */
 .checkout-form button {
   background-color: black;
   color: white;
@@ -106,7 +109,8 @@
   transform: scale(0.99);
 }
 
-.checkout-page .order-success {
+/* ---------- Styles for order success message ---------- */
+.checkout-page .popup-message {
   position: fixed;
   top: 100px;
   left: 50%;

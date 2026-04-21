@@ -1,3 +1,4 @@
+/* ---------- Styles for cart page ---------- */
 .cart-page {
   max-width: 1200px;
   margin: 0 auto;
@@ -12,6 +13,7 @@
   margin: 90px 20px 60px;
 }
 
+/* ---------- Styles for cart items section/cart summary ---------- */
 .cart-items-section,
 .cart-summary {
   background: white;
@@ -53,14 +55,12 @@
   gap: 20px;
 }
 
+/* ---------- Styles for empty cart message ---------- */
 .empty-cart-message {
   margin: 0;
 }
 
-.checkout-link {
-  width: 100%;
-}
-
+/* ---------- Styles for cart page button ---------- */
 .cart-checkout-btn {
   width: 100%;
   background-color: black;
@@ -73,6 +73,9 @@
   cursor: pointer;
   transition: all 0.2s ease;
   margin-top: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Barlow", sans-serif;
 }
 
 .cart-checkout-btn:hover {
@@ -84,6 +87,7 @@
   transform: scale(0.99);
 }
 
+/* ---------- Styles for cart summary ---------- */
 .cart-summary p {
   line-height: 1.5;
   margin: 0;
@@ -95,6 +99,7 @@
   margin: 0;
 }
 
+/* ---------- Styles for price totals ---------- */
 .totals {
   display: flex;
   flex-direction: column;
@@ -105,6 +110,7 @@
   font-weight: 600;
 }
 
+/* ---------- Styles for individual cart items ---------- */
 .cart-item {
   display: flex;
   gap: 20px;
@@ -136,6 +142,7 @@
   color: #444;
 }
 
+/* ---------- Styles for quantity controls/remove button ---------- */
 .cart-item-controls {
   display: flex;
   flex-direction: column;
@@ -176,6 +183,7 @@
   color: black;
 }
 
+/* ---------- Media queries ---------- */
 @media (max-width: 900px) {
   .cart-page {
     padding: 80px 16px 60px;

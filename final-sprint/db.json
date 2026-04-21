@@ -22,7 +22,8 @@
         "#F2D3B2"
       ],
       "image": "/Images/foundation-stick.png",
-      "detailsImage": "/Images/details-foundation.png"
+      "detailsImage": "/Images/details-foundation.png",
+      "stock": 42
     },
     {
       "id": "2",
@@ -40,7 +41,8 @@
         "#B24E5F"
       ],
       "image": "/Images/blush.png",
-      "detailsImage": "/Images/details-blush.png"
+      "detailsImage": "/Images/details-blush.png",
+      "stock": 31
     },
     {
       "id": "3",
@@ -49,9 +51,15 @@
       "price": 29,
       "description": "A cream highlight stick that adds a subtle dewy glow, while keeping the skin looking natural.",
       "shortDescription": "Glowy Highlighter",
-      "shades": ["#F6E7C1", "#EFD8A3", "#D8B07A", "#8C5A3C"],
+      "shades": [
+        "#F6E7C1",
+        "#EFD8A3",
+        "#D8B07A",
+        "#8C5A3C"
+      ],
       "image": "/Images/shimmer-stick.png",
-      "detailsImage": "/Images/details-shimmer.png"
+      "detailsImage": "/Images/details-shimmer.png",
+      "stock": 18
     },
     {
       "id": "4",
@@ -60,9 +68,15 @@
       "price": 29,
       "description": "A blendable bronzer that adds warmth and dimension, adding a natural sun kissed finish.",
       "shortDescription": "Natural Bronzer",
-      "shades": ["#D2A679", "#B88C5A", "#9C6F45", "#6F4A2E"],
+      "shades": [
+        "#D2A679",
+        "#B88C5A",
+        "#9C6F45",
+        "#6F4A2E"
+      ],
       "image": "/Images/bronzer.png",
-      "detailsImage": "/Images/details-bronzer.png"
+      "detailsImage": "/Images/details-bronzer.png",
+      "stock": 22
     },
     {
       "id": "5",
@@ -102,11 +116,17 @@
         },
         {
           "name": "Bronzer",
-          "shades": ["#D2A679", "#B88C5A", "#9C6F45", "#6F4A2E"]
+          "shades": [
+            "#D2A679",
+            "#B88C5A",
+            "#9C6F45",
+            "#6F4A2E"
+          ]
         }
       ],
       "image": "/Images/face-set.png",
-      "detailsImage": "/Images/details-face-set.png"
+      "detailsImage": "/Images/details-face-set.png",
+      "stock": 9
     },
     {
       "id": "6",
@@ -130,7 +150,8 @@
         "#3B1A22"
       ],
       "image": "/Images/lip-liner.png",
-      "detailsImage": "/Images/details-lip-liner.png"
+      "detailsImage": "/Images/details-lip-liner.png",
+      "stock": 27
     },
     {
       "id": "7",
@@ -154,7 +175,8 @@
         "#2C121D"
       ],
       "image": "/Images/lipstick.png",
-      "detailsImage": "/Images/details-lipstick.png"
+      "detailsImage": "/Images/details-lipstick.png",
+      "stock": 24
     },
     {
       "id": "8",
@@ -172,7 +194,8 @@
         "#A85666"
       ],
       "image": "/Images/lipgloss.png",
-      "detailsImage": "/Images/details-lip-oil.png"
+      "detailsImage": "/Images/details-lip-oil.png",
+      "stock": 16
     },
     {
       "id": "9",
@@ -182,7 +205,8 @@
       "description": "A rich, conditioning lip treatment, that melts in and does the work overnight.",
       "shortDescription": "Overnight Lip Care",
       "image": "/Images/lip-mask.png",
-      "detailsImage": "/Images/details-lip-mask.png"
+      "detailsImage": "/Images/details-lip-mask.png",
+      "stock": 14
     },
     {
       "id": "10",
@@ -222,7 +246,8 @@
         }
       ],
       "image": "/Images/lip-set.png",
-      "detailsImage": "/Images/details-lip-set.png"
+      "detailsImage": "/Images/details-lip-set.png",
+      "stock": 8
     },
     {
       "id": "11",
@@ -240,7 +265,8 @@
         "#6F5145"
       ],
       "image": "/Images/shadow.png",
-      "detailsImage": "/Images/details-eyeshadow.png"
+      "detailsImage": "/Images/details-eyeshadow.png",
+      "stock": 19
     },
     {
       "id": "12",
@@ -249,9 +275,13 @@
       "price": 26,
       "description": "Your lashes - but better.",
       "shortDescription": "Lengthening Mascara",
-      "shades": ["#2B1F1A", "#4A342A"],
+      "shades": [
+        "#2B1F1A",
+        "#4A342A"
+      ],
       "image": "/Images/mascara.png",
-      "detailsImage": "/Images/details-mascara.png"
+      "detailsImage": "/Images/details-mascara.png",
+      "stock": 25
     },
     {
       "id": "13",
@@ -261,7 +291,8 @@
       "description": "A lightweight brow gel for fluffy volume all day long.",
       "shortDescription": "Brow Gel",
       "image": "/Images/brow-gel.png",
-      "detailsImage": "/Images/details-brow-gel.png"
+      "detailsImage": "/Images/details-brow-gel.png",
+      "stock": 21
     },
     {
       "id": "14",
@@ -270,9 +301,16 @@
       "price": 23,
       "description": "Brow stick for soft fill, enhancing the brows natural shape.",
       "shortDescription": "Brow Pencil",
-      "shades": ["#E6D3B3", "#BFA487", "#8C6F5A", "#5E4638", "#2F231C"],
+      "shades": [
+        "#E6D3B3",
+        "#BFA487",
+        "#8C6F5A",
+        "#5E4638",
+        "#2F231C"
+      ],
       "image": "/Images/brow-stick.png",
-      "detailsImage": "/Images/details-brow-stick.png"
+      "detailsImage": "/Images/details-brow-stick.png",
+      "stock": 17
     },
     {
       "id": "15",
@@ -281,9 +319,16 @@
       "price": 41,
       "description": "A brow duo for soft fill and natural hold.",
       "shortDescription": "Brow Duo",
-      "shades": ["#E6D3B3", "#BFA487", "#8C6F5A", "#5E4638", "#2F231C"],
+      "shades": [
+        "#E6D3B3",
+        "#BFA487",
+        "#8C6F5A",
+        "#5E4638",
+        "#2F231C"
+      ],
       "image": "/Images/brow-set.png",
-      "detailsImage": "/Images/details-brow-set.png"
+      "detailsImage": "/Images/details-brow-set.png",
+      "stock": 7
     },
     {
       "id": "16",
@@ -293,7 +338,8 @@
       "description": "A dense, ultra-soft brush used to blend complexion products evenly into the skin.",
       "shortDescription": "Base Brush",
       "image": "/Images/foundation-brush.png",
-      "detailsImage": "/Images/details-foundation-brush.png"
+      "detailsImage": "/Images/details-foundation-brush.png",
+      "stock": 13
     },
     {
       "id": "17",
@@ -303,7 +349,8 @@
       "description": "A tapered brush, designed for soft contour and natural definition.",
       "shortDescription": "Contour Brush",
       "image": "/Images/sculpt-brush.png",
-      "detailsImage": "/Images/details-sculpt-brush.png"
+      "detailsImage": "/Images/details-sculpt-brush.png",
+      "stock": 11
     },
     {
       "id": "18",
@@ -313,7 +360,8 @@
       "description": "A blending brush for soft colours and diffused edges.",
       "shortDescription": "Blending Brush",
       "image": "/Images/blend-brush.png",
-      "detailsImage": "/Images/details-eyeshadow-brush.png"
+      "detailsImage": "/Images/details-eyeshadow-brush.png",
+      "stock": 15
     },
     {
       "id": "19",
@@ -323,7 +371,8 @@
       "description": "A soft, fluffy brush designed to apply and blend blush with a light even touch.",
       "shortDescription": "Blush Brush",
       "image": "/Images/blush-brush.png",
-      "detailsImage": "/Images/details-blush-brush.png"
+      "detailsImage": "/Images/details-blush-brush.png",
+      "stock": 12
     },
     {
       "id": "20",
@@ -333,19 +382,30 @@
       "description": "A set of staple brushes.",
       "shortDescription": "Brush Set",
       "image": "/Images/brush-set.png",
-      "detailsImage": "/Images/details-brush-set.png"
+      "detailsImage": "/Images/details-brush-set.png",
+      "stock": 6
     }
   ],
   "cart": [
     {
-      "productId": "1",
-      "name": "The Base Stick",
+      "productId": "2",
+      "name": "The Blush Balm",
       "category": "Complexion",
-      "price": 37,
-      "description": "Sheer, skin-like foundation stick that glides on effortlessly. Creates a smooth even base with a barely there feel.",
-      "image": "/Images/Foundation.png",
-      "quantity": 4,
-      "id": "fagqi1AWiSk"
+      "price": 26,
+      "description": "A lightweight blush balm that blends seamlessly into the skin - creating a soft, natural wash of colour.",
+      "image": "/Images/blush.png",
+      "quantity": 1,
+      "id": "qGONC_jgv7w"
+    },
+    {
+      "productId": "3",
+      "name": "The Shimmer Stick",
+      "category": "Complexion",
+      "price": 29,
+      "description": "A cream highlight stick that adds a subtle dewy glow, while keeping the skin looking natural.",
+      "image": "/Images/shimmer-stick.png",
+      "quantity": 1,
+      "id": "seR_3vd-vyo"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

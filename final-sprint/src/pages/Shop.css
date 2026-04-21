@@ -1,3 +1,4 @@
+/* ----------- Styles for shop page ----------- */
 .shop-page-container {
   display: flex;
   justify-content: center;
@@ -7,15 +8,6 @@
   gap: 24px;
 }
 
-.product-cards-wrapper {
-  display: flex;
-  flex-flow: wrap;
-  justify-content: center;
-  padding: 0 24px;
-  gap: 40px;
-  margin-bottom: 40px;
-}
-
 .shop-page-title {
   margin: 32px 0;
 }
@@ -23,4 +15,14 @@
 .shop-page-title h2 {
   font-family: "Sora", sans-serif;
   font-weight: 400;
+}
+
+/* ----------- Styles for product cards wrapper ----------- */
+.product-cards-wrapper {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  padding: 0 24px;
+  gap: 40px;
+  margin-bottom: 40px;
 }
