@@ -161,6 +161,17 @@ function App() {
     }
   };
 
+  // Clear cart after successfully placing order
+  const clearCart = async () => {
+    for (const item of cart) {
+      await fetch(`http://localhost:3000/cart/${item.id}`, {
+        method: "DELETE",
+      });
+    }
+
+    await fetchCart();
+  };
+
   return (
     <>
       <Navbar cartCount={cartCount} loading={loading} error={error} />
@@ -194,7 +205,10 @@ function App() {
                 />
               }
             />
-            <Route path="/checkout" element={<Checkout cart={cart} />} />
+            <Route
+              path="/checkout"
+              element={<Checkout cart={cart} clearCart={clearCart} />}
+            />
           </Routes>
         )}
       </main>

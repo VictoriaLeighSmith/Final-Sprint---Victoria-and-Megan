@@ -4,7 +4,7 @@ import { useState } from "react";
 
 // Checkout page component
 // Handles basic form validation and displays order summary
-const Checkout = ({ cart }) => {
+const Checkout = ({ cart, clearCart }) => {
   // Used to trigger popup re-render
   const [popupKey, setPopupKey] = useState(0);
 
@@ -12,7 +12,7 @@ const Checkout = ({ cart }) => {
   const [popupMessage, setPopupMessage] = useState("");
 
   // Handle form submission and validate input fields
-  const handleOrderSuccess = (e) => {
+  const handleOrderSuccess = async (e) => {
     e.preventDefault();
 
     const form = e.target;
@@ -37,6 +37,10 @@ const Checkout = ({ cart }) => {
     // Otherwise, show a success message
     setPopupMessage("Order placed successfully!");
     setPopupKey(Date.now());
+
+    // Reset form and clear cart only after "successfully" placing an order
+    form.reset();
+    await clearCart();
   };
 
   return (
