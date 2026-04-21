@@ -386,27 +386,6 @@
       "stock": 6
     }
   ],
-  "cart": [
-    {
-      "productId": "2",
-      "name": "The Blush Balm",
-      "category": "Complexion",
-      "price": 26,
-      "description": "A lightweight blush balm that blends seamlessly into the skin - creating a soft, natural wash of colour.",
-      "image": "/Images/blush.png",
-      "quantity": 1,
-      "id": "qGONC_jgv7w"
-    },
-    {
-      "productId": "3",
-      "name": "The Shimmer Stick",
-      "category": "Complexion",
-      "price": 29,
-      "description": "A cream highlight stick that adds a subtle dewy glow, while keeping the skin looking natural.",
-      "image": "/Images/shimmer-stick.png",
-      "quantity": 1,
-      "id": "seR_3vd-vyo"
-    }
-  ],
+  "cart": [],
   "$schema": "./node_modules/json-server/schema.json"
 }

@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import Home from "./pages/Home";
 import Shop from "./pages/Shop";
 import ProductDetails from "./pages/ProductDetails";
@@ -9,6 +9,9 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
 function App() {
+  // State for storing user location on website. This allows us to reset scroll position, otherwise react carries it over.
+  const { pathname } = useLocation();
+
   // State for storing product list from the API
   const [products, setProducts] = useState([]);
 
@@ -66,6 +69,11 @@ function App() {
     fetchProducts();
     fetchCart();
   }, []);
+
+  // Set scroll to the top of the page each time the pathname changes.
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   // Function to add item to cart or update quantity of item if it already exists in cart
   const addToCart = async (product) => {
