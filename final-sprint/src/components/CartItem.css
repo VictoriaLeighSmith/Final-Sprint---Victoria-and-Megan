@@ -1,3 +1,4 @@
+/* ---------- Styles for cart items ---------- */
 .cart-item {
   display: flex;
   gap: 20px;
@@ -31,6 +32,7 @@
   color: #444;
 }
 
+/* ---------- Styles for quantity/description text ---------- */
 .qty-text {
   font-size: 14px;
 }
@@ -40,7 +42,6 @@
 }
 
 /* CONTROLS */
-
 .cart-item-controls {
   display: flex;
   flex-direction: column;
@@ -85,7 +86,6 @@
 }
 
 /* CHECKOUT VERSION */
-
 .checkout-item {
   align-items: center;
 }

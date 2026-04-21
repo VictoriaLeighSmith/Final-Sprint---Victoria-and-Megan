@@ -1,3 +1,4 @@
+/* ---------- Styles for footer container ---------- */
 .footer-container {
   display: flex;
   justify-content: space-between;
@@ -8,6 +9,7 @@
   border-top: 1px solid #d9d9d9;
 }
 
+/* ---------- Styles for links ---------- */
 .links-wrapper {
   display: flex;
   gap: 80px;
@@ -28,6 +30,7 @@
   line-height: 1.4;
 }
 
+/* ---------- Styles for footer logo ---------- */
 .logo-container {
   display: flex;
   align-items: center;
@@ -35,7 +38,7 @@
   min-width: 220px;
 }
 
-.logo-container h3 {
+.logo-container p {
   font-family: "Selovira Signature", serif;
   font-size: 3.3rem;
   font-weight: 400;
@@ -43,6 +46,7 @@
   line-height: 1;
 }
 
+/* ---------- Media queries ---------- */
 @media (max-width: 900px) {
   .footer-container {
     flex-direction: column;

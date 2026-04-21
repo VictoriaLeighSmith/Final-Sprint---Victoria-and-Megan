@@ -1,32 +1,54 @@
 import "./Footer.css";
 
+// Footer component
+// Displays navigation links and brand name
 const Footer = () => {
   return (
-    <div className="footer-container">
+    <footer className="footer-container">
       <div className="links-wrapper">
+        {/* Placeholder links (prevent default navigation, these are decorative only) */}
         <div className="link-container">
-          <a href="#">About Us</a>
-          <a href="#">Contact Us</a>
-          <a href="#">FAQ</a>
+          <a href="/" onClick={(e) => e.preventDefault()}>
+            About Us
+          </a>
+          <a href="/" onClick={(e) => e.preventDefault()}>
+            Contact Us
+          </a>
+          <a href="/" onClick={(e) => e.preventDefault()}>
+            FAQ
+          </a>
         </div>
 
         <div className="link-container">
-          <a href="#">Shipping & Returns</a>
-          <a href="#">Refund Policy</a>
-          <a href="#">Terms & Conditions</a>
+          <a href="/" onClick={(e) => e.preventDefault()}>
+            Shipping & Returns
+          </a>
+          <a href="/" onClick={(e) => e.preventDefault()}>
+            Refund Policy
+          </a>
+          <a href="/" onClick={(e) => e.preventDefault()}>
+            Terms & Conditions
+          </a>
         </div>
 
         <div className="link-container">
-          <a href="#">My Account</a>
-          <a href="#">Accessibility</a>
-          <a href="#">Careers</a>
+          <a href="/" onClick={(e) => e.preventDefault()}>
+            My Account
+          </a>
+          <a href="/" onClick={(e) => e.preventDefault()}>
+            Accessibility
+          </a>
+          <a href="/" onClick={(e) => e.preventDefault()}>
+            Careers
+          </a>
         </div>
       </div>
 
+      {/* Brand/logo */}
       <div className="logo-container">
-        <h3>Common</h3>
+        <p>Common</p>
       </div>
-    </div>
+    </footer>
   );
 };
 

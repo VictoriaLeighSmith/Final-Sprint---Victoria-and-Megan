@@ -1,3 +1,4 @@
+/* ---------- Styles for home page container ---------- */
 .home-page-container {
   display: flex;
   flex-direction: column;
@@ -6,6 +7,7 @@
   width: 100%;
 }
 
+/* ---------- Styles for hero section ---------- */
 .hero-container {
   display: flex;
   justify-content: center;
@@ -22,14 +24,24 @@
   display: block;
 }
 
+/* ---------- Styles for tagline section ---------- */
+.sentence-section {
+  text-align: center;
+  max-width: 700px;
+  padding: 20px;
+}
+
 .sentence-section p {
-  font-family: Barlow;
+  font-family: "Barlow", sans-serif;
   padding-top: 5px;
 }
 
 .sentence-section h3 {
-  font-family: Sora;
+  font-family: "Sora", sans-serif;
+  font-weight: 400;
 }
+
+/* ---------- Styles for featured sections ---------- */
 .home-page-section-1,
 .home-page-section-2 {
   display: flex;
@@ -119,7 +131,7 @@
   }
 }
 
-/* ---------- SECTION 1 ---------- */
+/* ---------- SECTION 1 IMAGE SWAP ---------- */
 .section-1-image-container {
   position: relative;
   background-image: url("/Images/bronzer-motion.png");
@@ -144,7 +156,7 @@
   opacity: 1;
 }
 
-/* ---------- SECTION 2 ---------- */
+/* ---------- SECTION 2 IMAGE SWAP ---------- */
 .section-2-image-container {
   position: relative;
   background-image: url("/Images/lipoil-img.png");

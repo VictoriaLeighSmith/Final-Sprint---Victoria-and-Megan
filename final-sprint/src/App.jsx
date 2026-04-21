@@ -9,15 +9,22 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
 function App() {
+  // State for storing product list from the API
   const [products, setProducts] = useState([]);
+
+  // State for storing items currently in the cart
   const [cart, setCart] = useState([]);
+
+  // Loading and error states for informing the user about data fetching states
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+
+  // Calculate total number of items in cart for navbar cart icon
   const cartCount = cart.reduce((total, item) => {
     return total + item.quantity;
   }, 0);
 
-  // Create function to fetch product list from the server
+  // Fetch product list from the server
   const fetchProducts = async () => {
     try {
       const response = await fetch("http://localhost:3000/products");
@@ -32,11 +39,12 @@ function App() {
     } catch (error) {
       setError(error.message);
     } finally {
+      // Set loading state to false once fetch request completes
       setLoading(false);
     }
   };
 
-  // Create function to fetch cart data
+  // Fetch cart data from the server
   const fetchCart = async () => {
     try {
       const response = await fetch("http://localhost:3000/cart");
@@ -53,29 +61,20 @@ function App() {
     }
   };
 
-  // Fetch data from the server.
+  // Fetch data and cart information once on component mount to load the initial data
   useEffect(() => {
     fetchProducts();
     fetchCart();
   }, []);
 
-  // Based on loading state, display a message.
-  if (loading) {
-    return <p>Loading products ...</p>;
-  }
-
-  if (error) {
-    return <p>Error loading products.</p>;
-  }
-
-  // Function to add item to cart / update quantity of existing item
-
+  // Function to add item to cart or update quantity of item if it already exists in cart
   const addToCart = async (product) => {
     const existingItem = cart.find(
       (item) => String(item.productId) === String(product.id),
     );
 
     if (existingItem) {
+      // If the item is in cart, update quantity
       await fetch(`http://localhost:3000/cart/${existingItem.id}`, {
         method: "PATCH",
         headers: {
@@ -86,6 +85,7 @@ function App() {
         }),
       });
     } else {
+      // Otherwise, create a new cart item
       const cartItem = {
         productId: String(product.id),
         name: product.name,
@@ -105,16 +105,21 @@ function App() {
       });
     }
 
-    fetchCart();
+    // Refresh cart state after items added
+    await fetchCart();
   };
 
+  // Remove item from cart
   const removeFromCart = async (product) => {
     await fetch(`http://localhost:3000/cart/${product.id}`, {
       method: "DELETE",
     });
-    fetchCart();
+
+    // Refresh cart state after items removed
+    await fetchCart();
   };
 
+  // Increase quantity of cart item
   const increaseQty = async (product) => {
     await fetch(`http://localhost:3000/cart/${product.id}`, {
       method: "PATCH",
@@ -125,9 +130,12 @@ function App() {
         quantity: product.quantity + 1,
       }),
     });
-    fetchCart();
+
+    // Refresh cart state after item quantity updated
+    await fetchCart();
   };
 
+  // Decrease quantity of cart item
   const decreaseQty = async (product) => {
     if (product.quantity > 1) {
       await fetch(`http://localhost:3000/cart/${product.id}`, {
@@ -139,34 +147,49 @@ function App() {
           quantity: product.quantity - 1,
         }),
       });
-      fetchCart();
+
+      // Refresh cart state after item quantity updated
+      await fetchCart();
     }
   };
+
   return (
     <>
-      <Navbar cartCount={cartCount} />
-
-      {/* Set up routes for all website pages */}
-      <Routes>
-        <Route path="/" element={<Home products={products} />} />
-        <Route path="/shop" element={<Shop products={products} />} />
-        <Route
-          path="/products/:id"
-          element={<ProductDetails addToCart={addToCart} products={products} />}
-        />
-        <Route
-          path="/cart"
-          element={
-            <Cart
-              cart={cart}
-              removeFromCart={removeFromCart}
-              increaseQty={increaseQty}
-              decreaseQty={decreaseQty}
+      <Navbar cartCount={cartCount} loading={loading} error={error} />
+      <main className="app-main">
+        {loading ? (
+          <p className="app-message">
+            <em>Loading products ...</em>
+          </p>
+        ) : error ? (
+          <p className="app-message">
+            <em>Error loading products</em>
+          </p>
+        ) : (
+          <Routes>
+            <Route path="/" element={<Home products={products} />} />
+            <Route path="/shop" element={<Shop products={products} />} />
+            <Route
+              path="/products/:id"
+              element={
+                <ProductDetails addToCart={addToCart} products={products} />
+              }
             />
-          }
-        />
-        <Route path="/checkout" element={<Checkout cart={cart} />} />
-      </Routes>
+            <Route
+              path="/cart"
+              element={
+                <Cart
+                  cart={cart}
+                  removeFromCart={removeFromCart}
+                  increaseQty={increaseQty}
+                  decreaseQty={decreaseQty}
+                />
+              }
+            />
+            <Route path="/checkout" element={<Checkout cart={cart} />} />
+          </Routes>
+        )}
+      </main>
 
       <Footer />
     </>
